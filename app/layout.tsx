@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Cormorant_Garamond, Mulish, Mrs_Saint_Delafield } from "next/font/google";
 import "./globals.css";
 
-const headingFont = Playfair_Display({
+const headingFont = Cormorant_Garamond({
   subsets: ["latin"],
+  weight: ["300", "400"],
   variable: "--font-heading-face",
+  display: "swap",
 });
 
-const bodyFont = Inter({
+const bodyFont = Mulish({
   subsets: ["latin"],
+  weight: ["300", "400", "600"],
   variable: "--font-body-face",
+  display: "swap",
+});
+
+const scriptFont = Mrs_Saint_Delafield({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-script-face",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
+    <html
+      lang="en"
+      className={`${headingFont.variable} ${bodyFont.variable} ${scriptFont.variable}`}
+    >
       <body>{children}</body>
     </html>
   );
