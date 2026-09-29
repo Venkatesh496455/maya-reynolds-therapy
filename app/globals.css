@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-/* Clone palette (sampled from the original site). We swap it in Step 6. */
+/* Clone palette (from the original site). We swap it in Step 6. */
 @theme {
   --color-ink: #2b2b2b;
   --color-primary: #2b2b2b;
   --color-secondary: #e2d9ca;
-  --color-accent: #8fb3b0;
+  --color-accent: #86b3b3;
   --color-cream: #f5f4ef;
   --color-surface: #ffffff;
 
@@ -14,20 +14,68 @@
   --font-script: var(--font-script-face), cursive;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Fluid type scale: mobile and tablet */
+:root {
+  --text-h1: clamp(2rem, calc(24.85px + 1.905vw), 2.75rem);
+  --text-h2: clamp(1.72rem, calc(22.2px + 1.392vw), 2.275rem);
+  --text-h3: clamp(1.52rem, calc(20.3px + 1.024vw), 1.925rem);
+  --text-h4: clamp(1.23rem, calc(17.65px + 0.513vw), 1.43rem);
 }
 
-body {
-  background: var(--color-surface);
-  color: var(--color-ink);
-  font-family: var(--font-body);
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
+/* Fluid type scale: desktop (1024px and up) */
+@media (min-width: 1024px) {
+  :root {
+    --text-h1: clamp(2.75rem, 4.17vw, 4.5rem);
+    --text-h2: clamp(2.275rem, 3.36vw, 3.75rem);
+    --text-h3: clamp(1.925rem, 2.87vw, 3.2rem);
+    --text-h4: clamp(1.43rem, 2.19vw, 2.4rem);
+  }
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-heading);
-  font-weight: 300;
-  letter-spacing: -0.01em;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    font-weight: 300;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-size: var(--text-h1); line-height: 1.254; }
+  h2 { font-size: var(--text-h2); line-height: 1.294; }
+  h3 { font-size: var(--text-h3); line-height: 1.322; }
+  h4 { font-size: var(--text-h4); line-height: 1.361; }
+}
+
+@layer components {
+  /* The handwritten accent words like "thrive" */
+  .script {
+    font-family: var(--font-script);
+    font-style: normal;
+    font-weight: 400;
+    color: var(--color-accent);
+  }
+
+  /* The small uppercase underlined button links */
+  .btn-link {
+    display: inline-block;
+    padding: 9px 0;
+    font-size: 12.75px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom: 1px solid currentColor;
+    line-height: 1.2;
+  }
 }
