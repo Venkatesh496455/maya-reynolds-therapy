@@ -1,4 +1,9 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Header() {
+  const [open, setOpen] = useState(false);
   const links = ["About", "Our Team", "Specialties", "Methods", "FAQs"];
 
   return (
@@ -24,13 +29,37 @@ export default function Header() {
         </a>
 
         <button
-          className="lg:hidden text-2xl"
-          aria-label="Open menu"
+          className="text-2xl lg:hidden"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
           type="button"
+          onClick={() => setOpen((v) => !v)}
         >
-          ☰
+          {open ? "✕" : "☰"}
         </button>
       </div>
+
+      {open && (
+        <nav className="flex flex-col gap-1 border-t border-ink/10 bg-cream px-6 pb-6 lg:hidden">
+          {links.map((link) => (
+            <a
+              key={link}
+              href="#"
+              className="border-b border-ink/10 py-3 text-sm"
+              onClick={() => setOpen(false)}
+            >
+              {link}
+            </a>
+          ))}
+          <a
+            href="#"
+            className="btn-link mt-3 self-start"
+            onClick={() => setOpen(false)}
+          >
+            Contact
+          </a>
+        </nav>
+      )}
     </header>
   );
 }
