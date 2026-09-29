@@ -1,15 +1,15 @@
 const groups = [
   {
-    title: "Adults",
-    text: "Feeling stuck or overwhelmed? We help adults find clarity, build resilience, and move forward with confidence by addressing the root causes of anxiety, stress, and emotional pain.",
+    title: "High-Achievers & Professionals",
+    text: "For entrepreneurs, creatives, and professionals who feel exhausted, stuck in overthinking, or emotionally on edge despite looking put-together from the outside. We'll work on the anxiety and internal pressure underneath the high-functioning surface.",
   },
   {
-    title: "Couples",
-    text: "Relationships require effort, and we're here to help you strengthen yours. We guide couples through challenges like communication breakdowns and trust issues, helping you rebuild intimacy and strengthen your relationship.",
+    title: "Anxiety & Panic",
+    text: "If constant worry, tension in your body, or a racing mind have become familiar, we'll work together to help you feel more regulated day to day — not just calmer during sessions, but steadier in your daily life.",
   },
   {
-    title: "Children & Teens",
-    text: "Kids need support, too. We help them process big emotions, cope with challenging family situations, build coping skills, and feel understood, while also working closely with their parents to create a nurturing environment.",
+    title: "Trauma & Burnout",
+    text: "Whether from a single event or long-standing patterns rooted in childhood, relationships, or chronic stress, trauma work here is paced carefully, with an emphasis on safety and stabilization, so you can slow down and reconnect with yourself.",
   },
 ];
 
@@ -17,7 +17,7 @@ export default function WhoWeHelp() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 md:px-12">
       <h2 className="mb-14">
-        Who we <span className="script">help</span>
+        Who I work <span className="script">with</span>
       </h2>
 
       <div className="grid gap-12 md:grid-cols-3">

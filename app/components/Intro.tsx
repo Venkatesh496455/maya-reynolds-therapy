@@ -4,25 +4,26 @@ export default function Intro() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:px-12 lg:grid-cols-2 lg:items-center">
         <div>
           <h2 className="max-w-md">
-            You&apos;re holding onto hope that life can be better than it is
-            right now.
+            You&apos;re holding onto hope that things can feel steadier than
+            they do right now.
           </h2>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
           <p>
-            At [Practice Name] we want to make that hope a reality. Whether
-            you&apos;re an adult seeking personal growth, looking to work
-            through your trauma, a couple working on your relationship, or a
-            parent looking for support for your child, we provide a
-            compassionate and safe space to help you navigate all of
-            life&apos;s ups and downs.
+            I&apos;m Dr. Maya Reynolds, a licensed clinical psychologist in
+            Santa Monica. I work with adults who feel overwhelmed by anxiety,
+            stress, or the lingering effects of past experiences —
+            thoughtful, self-aware people who look &quot;functional&quot; on
+            the outside while quietly carrying constant worry, tension, or a
+            sense of always bracing for something to go wrong.
           </p>
           <p>
-            First and foremost, we believe what you&apos;re going through is
-            real, valid, and worthy of support. Our team offers clients a
-            deeper sense of self in the midst of their struggles. As we tap
-            into the power of connection and understanding, you can find your
-            footing again and take a transformative path forward.
+            My approach is warm, collaborative, and grounded. Sessions are
+            structured enough to feel supportive while leaving room for
+            reflection, using evidence-based methods like CBT, EMDR,
+            mindfulness, and body-oriented techniques to work with both the
+            emotional and physiological sides of what you&apos;re
+            experiencing.
           </p>
         </div>
       </div>
