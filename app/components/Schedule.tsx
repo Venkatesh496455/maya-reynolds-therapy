@@ -4,20 +4,18 @@ export default function Schedule() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:px-12 lg:grid-cols-2 lg:items-center">
         <div>
           <p className="mb-4 text-xs tracking-[0.15em] uppercase text-ink/70">
-            Schedule an appointment
+            Schedule a consultation
           </p>
           <h2 className="max-w-md">
-            Find a therapist who is the right fit for{" "}
-            <span className="script">you</span>.
+            Ready to feel more like <span className="script">you</span>?
           </h2>
           <p className="mt-6 max-w-md">
-            Coming to therapy is a courageous decision, and connecting with
-            the right kind of therapist makes all the difference. We
-            understand that your journey is personal, and we&apos;re here to
-            support you with care and understanding every step of the way.
+            Reaching out is often the hardest step. I offer a brief
+            consultation so we can talk about what you&apos;re navigating and
+            whether we&apos;re a good fit to work together.
           </p>
           <p className="mt-4 max-w-md">
-            Click the button below to schedule an appointment.
+            Click below to schedule your first appointment.
           </p>
           <a
             href="#"

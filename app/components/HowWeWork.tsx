@@ -6,29 +6,31 @@ export default function HowWeWork() {
 
         <div className="lg:order-1">
           <p className="mb-4 text-xs tracking-[0.15em] uppercase text-ink/70">
-            How we work
+            About Dr. Reynolds
           </p>
-          <h2 className="max-w-md">We&apos;re here to make a difference.</h2>
+          <h2 className="max-w-md">
+            Practical tools, with depth-oriented work.
+          </h2>
 
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             <p>
-              The clients we work with are balancing so many things at once.
-              It&apos;s often hard for them to put themselves first. Here,
-              your needs are always top priority. Our team takes the time to
-              deeply listen to our clients in order to truly understand their
-              story and their struggles.
+              I take a warm, collaborative, and grounded approach to
+              therapy. Sessions are structured enough to feel supportive,
+              while still leaving space for reflection and depth. I
+              integrate CBT, EMDR, mindfulness-based practices, and
+              body-oriented techniques throughout our work together.
             </p>
             <p>
-              We recognize that no two people are the same and that
-              personalized therapy means an intentional, tailored approach.
-              (You won&apos;t find anything &quot;one-size-fits-all&quot;
-              here.) If you&apos;re ready to do the work, we&apos;re ready to
-              help.
+              I believe therapy works best when clients feel respected,
+              understood, and actively involved in the process. My goal
+              isn&apos;t just symptom relief, but helping you develop
+              insight, resilience, and a stronger relationship with
+              yourself over time.
             </p>
           </div>
 
           <a href="#" className="btn-link mt-8">
-            Learn more about us
+            Learn more about my approach
           </a>
         </div>
       </div>

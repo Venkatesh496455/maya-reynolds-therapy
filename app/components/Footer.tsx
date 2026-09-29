@@ -1,6 +1,6 @@
 export default function Footer() {
   const navigate = ["Home", "About", "FAQs", "Contact"];
-  const team = ["Maya Reynolds"];
+  const team = ["Dr. Maya Reynolds, PsyD"];
 
   return (
     <footer className="border-t border-ink/10 bg-cream">
@@ -11,9 +11,9 @@ export default function Footer() {
             Therapy &amp; Counseling
           </p>
           <p className="mt-4 text-sm">
-            We want to make getting started simple. You&apos;re welcome to
-            come into our office in [City] or schedule virtual appointments
-            from anywhere in [State]—whatever works best for you.
+            A quiet, private space in Santa Monica designed to feel calm and
+            grounding. In-person sessions welcome, or connect via secure
+            telehealth from anywhere in California.
           </p>
         </div>
 
@@ -34,7 +34,7 @@ export default function Footer() {
 
         <div>
           <p className="mb-4 text-xs tracking-[0.15em] uppercase text-ink/70">
-            Our Team
+            Clinician
           </p>
           <ul className="space-y-2 text-sm">
             {team.map((item) => (
@@ -47,16 +47,15 @@ export default function Footer() {
           <p className="mb-4 text-xs tracking-[0.15em] uppercase text-ink/70">
             Contact
           </p>
-          <p className="text-sm">[Street Address]</p>
-          <p className="text-sm">[City, State ZIP]</p>
-          <p className="mt-2 text-sm">[email@example.com]</p>
-          <p className="text-sm">[Phone Number]</p>
+          <p className="text-sm">123th Street 45 W</p>
+          <p className="text-sm">Santa Monica, CA 90401</p>
+          <p className="mt-2 text-sm">hello@mayareynoldstherapy.com</p>
         </div>
       </div>
 
       <div className="border-t border-ink/10 px-6 py-6 text-center text-xs text-ink/60 md:px-12">
-        © {new Date().getFullYear()} Maya Reynolds Therapy &amp; Counseling.
-        All rights reserved.
+        © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD. All rights
+        reserved.
       </div>
     </footer>
   );
