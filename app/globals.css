@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
-/* Clone palette (from the original site). We swap it in Step 6. */
+/* Clone structure, Maya Reynolds palette (grounded, warm — matches her office photos) */
 @theme {
-  --color-ink: #2b2b2b;
-  --color-primary: #2b2b2b;
-  --color-secondary: #e2d9ca;
-  --color-accent: #86b3b3;
-  --color-cream: #f5f4ef;
+  --color-ink: #2f2a25;
+  --color-primary: #2f2a25;
+  --color-secondary: #ece4d8;
+  --color-accent: #8a7a5c;
+  --color-cream: #faf7f2;
   --color-surface: #ffffff;
 
   --font-heading: var(--font-heading-face), Georgia, serif;
@@ -60,7 +60,6 @@
 }
 
 @layer components {
-  /* The handwritten accent words like "thrive" */
   .script {
     font-family: var(--font-script);
     font-style: normal;
@@ -68,7 +67,6 @@
     color: var(--color-accent);
   }
 
-  /* The small uppercase underlined button links */
   .btn-link {
     display: inline-block;
     padding: 9px 0;
