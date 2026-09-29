@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const items = [
   {
     title: "Anxiety & Panic",
@@ -17,7 +19,15 @@ export default function Specialties() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 md:px-12">
       <div className="mb-14 grid gap-8 lg:grid-cols-2 lg:items-end">
-        <div className="aspect-video rounded-sm bg-gradient-to-tr from-secondary to-accent/30 lg:order-2" />
+        <div className="relative aspect-video overflow-hidden rounded-sm lg:order-2">
+          <Image
+            src="/images/about.jpg"
+            alt="Journal and coffee on a wooden table"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+          />
+        </div>
         <h2 className="lg:order-1">
           Areas of <span className="script">focus</span>
         </h2>

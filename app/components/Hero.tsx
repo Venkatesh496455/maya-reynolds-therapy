@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="mx-auto max-w-7xl px-6 pt-10 pb-20 md:px-12 md:pt-16">
@@ -21,8 +23,25 @@ export default function Hero() {
         </div>
 
         <div className="grid grid-cols-3 gap-4">
-          <div className="col-span-2 aspect-[3/4] rounded-sm bg-gradient-to-br from-secondary to-accent/40" />
-          <div className="col-span-1 aspect-[3/4] rounded-sm bg-gradient-to-tl from-accent/30 to-cream self-end" />
+          <div className="relative col-span-2 aspect-[3/4] overflow-hidden rounded-sm">
+            <Image
+              src="/images/hero-2.jpg"
+              alt="Santa Monica coastline at golden hour"
+              fill
+              className="object-cover"
+              priority
+              sizes="(min-width: 1024px) 40vw, 60vw"
+            />
+          </div>
+          <div className="relative col-span-1 aspect-[3/4] self-end overflow-hidden rounded-sm">
+            <Image
+              src="/images/hero-1.jpg"
+              alt="Quiet reading nook with natural light"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 20vw, 30vw"
+            />
+          </div>
         </div>
       </div>
     </section>

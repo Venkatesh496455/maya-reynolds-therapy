@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Schedule() {
   return (
     <section className="bg-cream">
@@ -25,7 +27,15 @@ export default function Schedule() {
           </a>
         </div>
 
-        <div className="aspect-[4/3] rounded-sm bg-gradient-to-bl from-secondary to-accent/20" />
+        <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
+          <Image
+            src="/images/hero-2.jpg"
+            alt="Santa Monica coastline"
+            fill
+            className="object-cover"
+            sizes="(min-width: 1024px) 40vw, 100vw"
+          />
+        </div>
       </div>
     </section>
   );
