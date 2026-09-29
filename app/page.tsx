@@ -5,6 +5,7 @@ import WhoWeHelp from "./components/WhoWeHelp";
 import QuoteBand from "./components/QuoteBand";
 import Expertise from "./components/Expertise";
 import HowWeWork from "./components/HowWeWork";
+import Office from "./components/Office";
 import Specialties from "./components/Specialties";
 import FAQ from "./components/FAQ";
 import Schedule from "./components/Schedule";
@@ -20,6 +21,7 @@ export default function Home() {
       <QuoteBand />
       <Expertise />
       <HowWeWork />
+      <Office />
       <Specialties />
       <FAQ />
       <Schedule />
