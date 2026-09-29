@@ -24,8 +24,9 @@ const scriptFont = Mrs_Saint_Delafield({
 });
 
 export const metadata: Metadata = {
-  title: "Therapy Website Draft",
-  description: "Homepage draft",
+  title: "Dr. Maya Reynolds, PsyD | Anxiety & Trauma Therapist in Santa Monica, CA",
+  description:
+    "Dr. Maya Reynolds, PsyD offers therapy for anxiety, panic, trauma, and burnout in Santa Monica, CA, with in-person and telehealth sessions available across California.",
 };
 
 export default function RootLayout({
